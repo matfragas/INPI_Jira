@@ -1,11 +1,16 @@
 import requests
 from requests.auth import HTTPBasicAuth
+import os
 
+JIRA_DOMAIN = os.environ["JIRA_DOMAIN"]
+PROJECT_KEY = os.environ["PROJECT_KEY"]
+EMAIL = os.environ["EMAIL"]
+API_TOKEN = os.environ["API_TOKEN"]
 # === CONFIGURATION ===
-JIRA_DOMAIN = "votre-domaine.atlassian.net"   # ex: openai.atlassian.net
-PROJECT_KEY = "ABC"                           # Clé du projet JIRA
-EMAIL = "votre.email@example.com"             # Votre email Atlassian
-API_TOKEN = "votre_token_api"                 # API token sécurisé
+# JIRA_DOMAIN = "votre-domaine.atlassian.net"   # ex: openai.atlassian.net
+# PROJECT_KEY = "ABC"                           # Clé du projet JIRA
+# EMAIL = "votre.email@example.com"             # Votre email Atlassian
+# API_TOKEN = "votre_token_api"                 # API token sécurisé
 
 # === JIRA API Endpoint ===
 JIRA_API_URL = f"https://{JIRA_DOMAIN}/rest/api/3/search"
