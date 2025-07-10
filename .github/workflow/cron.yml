@@ -32,4 +32,4 @@ jobs:
         API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
         PROJECT_KEY: ${{ secrets.PROJECT_KEY }}
       run: |
-        python scripts/get_jira_us.py
+        python scripts/export.py
