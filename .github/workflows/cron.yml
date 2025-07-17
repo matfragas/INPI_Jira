@@ -3,7 +3,7 @@ name: Run JIRA US Fetcher
 on:
   push:
     branches:
-      - main
+    - main
   schedule:
     - cron: '0 8 * * *'  # Exécute tous les jours à 8h UTC (à adapter)
 
