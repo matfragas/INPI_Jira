@@ -37,7 +37,7 @@ response = requests.get(
     params=params,
     auth=HTTPBasicAuth(EMAIL, API_TOKEN)
 )
-
+print(f"🟢 project = {PROJECT_KEY} AND issuetype = Story ORDER BY priority DESC")
 # === Résultat ===
 if response.status_code == 200:
     data = response.json()
