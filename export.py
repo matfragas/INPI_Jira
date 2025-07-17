@@ -19,7 +19,7 @@ JIRA_API_URL = f"https://{JIRA_DOMAIN}/rest/api/3/search"
 
 # === JQL pour filtrer les User Stories dans le backlog ===
 # "issuetype = Story" peut être modifié selon votre workflow
-JQL = f'project = {PROJECT_KEY} AND issuetype = Story ORDER BY priority DESC'
+JQL = f'project = "{PROJECT_KEY}" AND issuetype = Story ORDER BY priority DESC'
 
 # === Requête ===
 headers = {
