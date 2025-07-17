@@ -1,4 +1,4 @@
-name: Run JIRA US Fetcher
+name: Run JIRA US Fetcher 2
 
 on:
   push:
@@ -34,3 +34,4 @@ jobs:
         PROJECT_KEY: ${{ secrets.PROJECT_KEY }}
       run: |
         python export.py
+        
