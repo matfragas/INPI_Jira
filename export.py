@@ -1,6 +1,7 @@
+import os
 import requests
 from requests.auth import HTTPBasicAuth
-import os
+
 
 JIRA_DOMAIN = os.environ["JIRA_DOMAIN"]
 PROJECT_KEY = os.environ["PROJECT_KEY"]
